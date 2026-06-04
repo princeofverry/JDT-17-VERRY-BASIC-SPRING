@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: jdt17.spring.dasar
+  banner:
+    location: spring.banner.txt
+
+server:
+  port: ${JDT_DASAR_SERVICE_PORT}
