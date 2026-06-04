@@ -18,17 +18,17 @@ public class DistributionService {
     // inject 1 gudang sama kelima salesnya
     public DistributionService(
             Warehouse warehouse,
-//`            @Qualifier("motor1") Sales motor1,
-//            @Qualifier("motor2") Sales motor2,
-//            @Qualifier("motor3") Sales motor3,
-//            @Qualifier("mobil1") Sales mobil1,
-//            @Qualifier("mobil2") Sales mobil2,`
+            @Qualifier("motor1") Sales motor1,
+            @Qualifier("motor2") Sales motor2,
+            @Qualifier("motor3") Sales motor3,
+            @Qualifier("mobil1") Sales mobil1,
+            @Qualifier("mobil2") Sales mobil2
 
-            Sales motor1,
-            Sales motor2,
-            Sales motor3,
-            Sales mobil1,
-            Sales mobil2
+//            Sales motor1,
+//            Sales motor2,
+//            Sales motor3,
+//            Sales mobil1,
+//            Sales mobil2
     )
     {
         this.warehouse = warehouse;
