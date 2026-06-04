@@ -6,8 +6,10 @@ import com.indivaragroup.jdt17.spring.dasar.exam.service.Sales;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 
 @Configuration
+@Import({ConfigurationSales.class, ConfigurationWarehouse.class})
 public class ConfigurationDistribution {
 
     // task 7

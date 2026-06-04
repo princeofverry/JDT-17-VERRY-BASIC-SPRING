@@ -126,8 +126,8 @@ public class Application {
         // task 8 running
         // membuat context yang berisi semua configutration
         var contextTaskOne = new AnnotationConfigApplicationContext(
-                ConfigurationWarehouse.class,
-                ConfigurationSales.class,
+//                ConfigurationWarehouse.class,
+//                ConfigurationSales.class,
                 ConfigurationDistribution.class
         );
 
