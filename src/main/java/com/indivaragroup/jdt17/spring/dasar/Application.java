@@ -123,6 +123,7 @@ public class Application {
 
          */
 
+        // task 8 running
         // membuat context yang berisi semua configutration
         var contextTaskOne = new AnnotationConfigApplicationContext(
                 ConfigurationFactory.class,

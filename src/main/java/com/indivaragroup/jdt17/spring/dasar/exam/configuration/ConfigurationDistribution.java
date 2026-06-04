@@ -10,7 +10,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ConfigurationDistribution {
 
-    // mengurutkan semua distribusi antara gudang, sales, dan dan service
+    // task 7
+    // menyambungkan (wiring) semua distribusi antara gudang, sales, dan dan service
     @Bean
     public DistributionService distributionService(
             Factory factory,

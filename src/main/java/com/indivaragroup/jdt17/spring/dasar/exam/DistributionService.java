@@ -13,6 +13,8 @@ public class DistributionService {
     private final Sales mobil1;
     private final Sales mobil2;
 
+    // task 6
+    // disini tempat dependency injection
     // inject 1 gudang sama kelima salesnya
     public DistributionService(
             Factory factory,
@@ -37,6 +39,10 @@ public class DistributionService {
         printDistribution(motor3);
         printDistribution(mobil1);
         printDistribution(mobil2);
+
+        // manggil sisa stok disini sebab kalau di print distribution akan terpanggil
+        // setiap kali [DISTRIBUSI]
+        System.out.println("sisa stock  : " + factory.getStockCount());
     }
 
     private void printDistribution(Sales sales) {
@@ -50,5 +56,7 @@ public class DistributionService {
                         + " | Gudang: " + factory.getFactoryName()
                         + " (stok: " + factory.getStockCount() + ")"
         );
+
+//        System.out.println("sisa stock: " + factory.getStockCount());
     }
 }

@@ -1,5 +1,6 @@
 package com.indivaragroup.jdt17.spring.dasar.exam.service;
 
+// task 3 implementasi sales
 public class carSales implements Sales{
     private final String name;
     private final String area;
