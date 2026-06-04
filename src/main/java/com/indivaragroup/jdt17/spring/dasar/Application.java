@@ -8,7 +8,7 @@ import com.indivaragroup.jdt17.spring.dasar.dependency.injection.dto.WorldInject
 import com.indivaragroup.jdt17.spring.dasar.dto.HelloDTO;
 import com.indivaragroup.jdt17.spring.dasar.dto.WorldDTO;
 import com.indivaragroup.jdt17.spring.dasar.exam.DistributionService;
-import com.indivaragroup.jdt17.spring.dasar.exam.configuration.ConfigurationFactory;
+import com.indivaragroup.jdt17.spring.dasar.exam.configuration.ConfigurationWarehouse;
 import com.indivaragroup.jdt17.spring.dasar.exam.configuration.ConfigurationSales;
 import com.indivaragroup.jdt17.spring.dasar.exam.configuration.ConfigurationDistribution;
 import org.springframework.boot.SpringApplication;
@@ -126,7 +126,7 @@ public class Application {
         // task 8 running
         // membuat context yang berisi semua configutration
         var contextTaskOne = new AnnotationConfigApplicationContext(
-                ConfigurationFactory.class,
+                ConfigurationWarehouse.class,
                 ConfigurationSales.class,
                 ConfigurationDistribution.class
         );

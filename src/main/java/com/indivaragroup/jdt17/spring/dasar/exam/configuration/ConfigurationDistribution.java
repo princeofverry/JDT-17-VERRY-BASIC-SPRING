@@ -1,7 +1,7 @@
 package com.indivaragroup.jdt17.spring.dasar.exam.configuration;
 
 import com.indivaragroup.jdt17.spring.dasar.exam.DistributionService;
-import com.indivaragroup.jdt17.spring.dasar.exam.model.Factory;
+import com.indivaragroup.jdt17.spring.dasar.exam.model.Warehouse;
 import com.indivaragroup.jdt17.spring.dasar.exam.service.Sales;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
@@ -14,7 +14,7 @@ public class ConfigurationDistribution {
     // menyambungkan (wiring) semua distribusi antara gudang, sales, dan dan service
     @Bean
     public DistributionService distributionService(
-            Factory factory,
+            Warehouse warehouse,
             @Qualifier("motor1") Sales motor1,
             @Qualifier("motor2") Sales motor2,
             @Qualifier("motor3") Sales motor3,
@@ -22,7 +22,7 @@ public class ConfigurationDistribution {
             @Qualifier("mobil2") Sales mobil2
     ) {
         return new DistributionService(
-                factory, motor1, motor2, motor3, mobil1, mobil2
+                warehouse, motor1, motor2, motor3, mobil1, mobil2
         );
     }
 }
